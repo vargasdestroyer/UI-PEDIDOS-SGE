@@ -1,0 +1,301 @@
+
+:root{
+    --color-primary:#006ee3;
+    --color-secondary:#3B54B8;
+    --color-fondo:##F4F6F8;
+
+  }
+  
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#F2F3FA;
+}
+/**********************************************************************************************
+/*start --------------------------------------------------------------------------
+#Reglas Generales
+ --------------------------------------------------------------------------  start*/
+ .bg-color-p{
+     background-color: var(--color-primary);
+     border: 0.8px solid var(--color-primary);
+ }
+ .shadow-ui{
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+ }
+
+
+/*--------#Reglas Generales-----------------------------------------------  end*/
+
+
+ /**********************************************************************************************
+/*start-----------------------------#main-------------------------------  start*/
+.main{
+    background-color:#F2F3FA;
+}
+.main-content{
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    /* margin: 0.5rem;
+    padding:0.8rem;     */
+}
+.main-title{
+    justify-content:space-between;
+}
+  
+  .main-title{      
+      font-weight: 600;
+  }
+  .main-title > p{
+    all: unset;
+    font-size: 1.3rem;
+    padding:0px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+/*end ------------------------------------#main ------------------------------  end*/
+
+
+/**********************************************************************************************
+/*start -------------------#box-product ------------------------------------  start*/
+ .box-product-form{
+    border: 0.8px solid var(--color-primary);
+    color: #8C8C8C;
+ }
+ .box-product,.box-generar{
+     margin:0.50rem;
+ }
+ .box-product-btn{
+    border: 0.8px solid var(--color-primary);
+    color: var(--color-primary);
+    
+}
+
+.product-items-list{
+    height: 75vh;
+}
+/* Scroll personalizado lista product */
+.product-items-list{
+    overflow-y: scroll;    
+}
+.product-items-list::-webkit-scrollbar{
+    width: 6px;
+    border: 2px solid white;    
+}  
+.product-items-list::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius:6px;  
+  }
+
+  /* Lista de productos */
+  .item{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); 
+    padding: 0.3rem; 
+    background-color: white; 
+    margin-bottom: 0.7rem;
+    height: 7vh;
+  }
+  .item:hover{
+      border: 1px solid var(--color-primary);
+      box-shadow: 0;
+      transition: all 0.6 ease;
+  }  
+  .item-img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .item-description-code{
+      font-size: 1rem;
+      color: var(--color-primary);
+      font-weight: bold;
+  }
+  .item-description > h2{
+      margin: 0;
+  }
+  .item-description-title{
+      font-size: 0.85rem;
+      color: var(--color-primary);
+      
+  }
+  .box-item-img{
+      width: 70%;
+  }
+  .item-description-precies{
+      font-size: 0.8rem;
+      color:#919294;
+    }
+    .items-number{
+        width: 30%;
+    }
+    .text-number{
+        color: var(--color-primary);
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: right;        
+    }
+    .text-niu{
+        font-size: 0.7rem;
+        text-align: right;      
+        color:#919294;        
+  }
+  @media (max-width: 1379px) {
+    .main-content{
+        margin: 0.2rem;
+        padding: 0.3rem;
+    }
+    .box-product{
+        padding: 0;
+    }    
+    .main-title > p{
+        font-size: 1rem;
+    }
+    .item-img{
+        width: 70px;
+        height: 80px;
+      }
+    .item-description-code{
+        font-size: 0.9rem;
+    }
+    .item-description-title{
+        font-size: 0.85rem;
+    }
+    .item-description-precies{
+        font-size: 0.7rem;
+      }
+    .text-number{
+        font-size: 0.8rem;
+    }
+    .text-niu{
+        font-size: 0.6rem;    
+    }
+  }
+  @media (max-width: 1195px) {
+    .box-item-img{
+        width: 77%;
+    }  
+    .items-number{
+          width: 23%;
+    }
+  }
+  @media (max-width: 1110px) {
+    .item-description{
+        margin-left: 0.5rem !important;
+    }
+    .box-item-img{
+        width: 75%;
+    }  
+    .items-number{
+          width: 25%;
+    }
+    .item-description-title{
+        font-size: 0.79rem;
+    }
+    .item-description-precies{
+        font-size: 0.6rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .main-title > p{
+        font-size: 1rem;
+    }
+    .box-item-img{
+        width: 70%;
+    }  
+    .items-number{
+          width: 30%;
+    }
+    .item-img{
+        width: 72px;
+        height: 79px;
+      }
+    .item-description-code{
+        font-size: 0.95rem;
+    }
+    .item-description-title{
+        font-size: 0.85rem;
+    }
+    .item-description-precies{
+        font-size: 0.75rem;
+      }
+    .text-number{
+        font-size: 0.85rem;
+    }
+    .text-niu{
+        font-size: 0.7rem;    
+    }
+    .main-content{
+        margin: 0;
+        padding: 0;
+    }
+    .box-product{
+        padding: 0;
+        border: 0 !important;        
+    }
+  }
+
+  @media (max-width: 700px) {
+    .main-title > p{
+        font-size: 0.9rem;
+    }
+    .box-item-img{
+        width: 77%;
+    }  
+    .items-number{
+          width: 23%;
+    }
+    .item-img{
+        width: 70px;
+        height: 75px;
+        vertical-align: middle;
+      }
+    .item-description-code{
+        font-size: 0.8rem;
+    }
+    .item-description-title{
+        font-size: 0.7rem;
+    }
+    .item-description-precies{
+        font-size: 0.6rem;
+      }
+    .text-number{
+        font-size: 0.7rem;
+    }
+    .text-niu{
+        font-size: 0.6rem;    
+    }
+    .main-content{
+        margin: 0;
+        padding: 0;
+    }
+    .box-product{
+        padding: 0;
+        border: 0 !important;        
+    }
+  }
+/*end ------------------------------------#box-product-----------------------  end*/
+
+/*start ------------------------------------# Generar pedido---------------  start*/
+.box-title-generar{
+    justify-content: space-between;
+
+}
+.money-cambio > div > p{
+    line-height: 30px;
+    font-size: 1rem;
+
+}
+.title-generar{
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: var(--primary);
+}
+@media (max-width: 1379px) {
+    .money-cambio > div > p{
+        font-size: 0.85rem;
+    }
+    .title-generar{
+        font-size: 1rem; 
+       
+    }
+  }
