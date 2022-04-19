@@ -1,8 +1,12 @@
 
 :root{
-    --color-primary:#006ee3;
+    --color-primary: #398BF7;
     --color-secondary:#3B54B8;
     --color-fondo:##F4F6F8;
+    --color-scroll:#c7c7c7;
+    --color--cancelar:#DC3545;
+    --color--guardar:#06D79C;
+
 
   }
   
@@ -19,9 +23,14 @@ html{
      border: 0.8px solid var(--color-primary);
  }
  .shadow-ui{
-     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
- }
-
+     /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); */
+    }
+    .box-generar ,.box-product{
+        background-color: white;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        height: 100%;
+}
 
 /*--------#Reglas Generales-----------------------------------------------  end*/
 
@@ -32,7 +41,7 @@ html{
     background-color:#F2F3FA;
 }
 .main-content{
-    background-color:rgb(255, 255, 255);
+    /* background-color:rgb(255, 255, 255); */
     border-radius: 5px;
     /* margin: 0.5rem;
     padding:0.8rem;     */
@@ -46,7 +55,7 @@ html{
   }
   .main-title > p{
     all: unset;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding:0px;
     font-weight: 700;
     color: var(--color-primary);
@@ -60,8 +69,14 @@ html{
     border: 0.8px solid var(--color-primary);
     color: #8C8C8C;
  }
- .box-product,.box-generar{
+ /* .box-product,.box-generar{
      margin:0.50rem;
+ } */
+ .box-product{
+     margin-right: 0.4rem;
+ }
+ .box-generar{
+     margin-left: 0.4rem;
  }
  .box-product-btn{
     border: 0.8px solid var(--color-primary);
@@ -70,7 +85,7 @@ html{
 }
 
 .product-items-list{
-    height: 75vh;
+    height: 70vh;
 }
 /* Scroll personalizado lista product */
 .product-items-list{
@@ -81,7 +96,7 @@ html{
     border: 2px solid white;    
 }  
 .product-items-list::-webkit-scrollbar-thumb {
-    background: #c7c7c7;
+    background: var(--color-scroll);
     border-radius:6px;  
   }
 
@@ -91,7 +106,7 @@ html{
     padding: 0.3rem; 
     background-color: white; 
     margin-bottom: 0.7rem;
-    height: 7vh;
+    /* height: 7vh; */
   }
   .item:hover{
       border: 1px solid var(--color-primary);
@@ -105,7 +120,7 @@ html{
     border-radius: 4px;
   }
   .item-description-code{
-      font-size: 1rem;
+      font-size: 0.78rem;
       color: var(--color-primary);
       font-weight: bold;
   }
@@ -113,7 +128,7 @@ html{
       margin: 0;
   }
   .item-description-title{
-      font-size: 0.85rem;
+      font-size: 0.72rem;
       color: var(--color-primary);
       
   }
@@ -129,7 +144,7 @@ html{
     }
     .text-number{
         color: var(--color-primary);
-        font-size: 0.9rem;
+        font-size: 0.78rem;
         font-weight: bold;
         text-align: right;        
     }
@@ -138,7 +153,16 @@ html{
         text-align: right;      
         color:#919294;        
   }
+  @media (max-width: 1199px) {
+    .product-items-list{
+        height: 30vh;
+    }
+  }
   @media (max-width: 1379px) {
+    .box-product, .box-generar{
+        margin: 0;
+    }
+    
     .main-content{
         margin: 0.2rem;
         padding: 0.3rem;
@@ -150,14 +174,14 @@ html{
         font-size: 1rem;
     }
     .item-img{
-        width: 70px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
       }
     .item-description-code{
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
     .item-description-title{
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
     .item-description-precies{
         font-size: 0.7rem;
@@ -188,7 +212,7 @@ html{
           width: 25%;
     }
     .item-description-title{
-        font-size: 0.79rem;
+        font-size: 0.72rem;
     }
     .item-description-precies{
         font-size: 0.6rem;
@@ -196,8 +220,18 @@ html{
   }
 
   @media (max-width: 991px) {
+      /* box padres */
+      .box-product{        
+        /* height: 40vh; */
+        height: 35vh;
+    }
+      /* box padres */
+    .product-items-list{
+        height: 28vh;
+        /* height: 32vh; */
+    }
     .main-title > p{
-        font-size: 1rem;
+        font-size: 0.88rem;
     }
     .box-item-img{
         width: 70%;
@@ -206,20 +240,21 @@ html{
           width: 30%;
     }
     .item-img{
-        width: 72px;
-        height: 79px;
+        width: 60px;
+        height: 60px;
       }
     .item-description-code{
-        font-size: 0.95rem;
+        font-size: 0.78rem;
+        font-weight: bold;
     }
     .item-description-title{
-        font-size: 0.85rem;
+        font-size: 0.80rem;
     }
     .item-description-precies{
         font-size: 0.75rem;
       }
     .text-number{
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
     .text-niu{
         font-size: 0.7rem;    
@@ -236,7 +271,7 @@ html{
 
   @media (max-width: 700px) {
     .main-title > p{
-        font-size: 0.9rem;
+        font-size: 0.88rem;
     }
     .box-item-img{
         width: 77%;
@@ -250,10 +285,10 @@ html{
         vertical-align: middle;
       }
     .item-description-code{
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     .item-description-title{
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     .item-description-precies{
         font-size: 0.6rem;
@@ -282,20 +317,189 @@ html{
 }
 .money-cambio > div > p{
     line-height: 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 
+}
+.form-box{
+    border: 1px solid var(--color-primary);
+}
+.cambio-sunat{
+    font-size:0.96rem;
+    color: var(--color-primary);
 }
 .title-generar{
     font-size: 1.2rem; 
     font-weight: bold; 
     color: var(--primary);
 }
+
+.pedidos-tabla{
+    height:35vh;
+    padding:0 0.3rem;
+}
+.pedidos-tabla::-webkit-scrollbar{
+    /* width:7px; */
+    width: 6px;
+    border: 2px solid white;  
+    
+}
+.pedidos-tabla::-webkit-scrollbar-thumb {
+    background: var(--color-scroll);
+    border-radius:6px;
+        
+}
+
+.pedidos{
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-scroll) !important;
+}
+.table{
+    /* all: unset; */
+    border-color: unset !important ;
+}
+
+.tabla-items tr{
+    text-align:left;
+    font-size: 0.75rem;
+    /* border: 1px solid #a7a7a7 !important; */
+  border-radius: 5px 5px 0px 0px !important;
+  -moz-border-radius: 5px 5px 0px 0px !important;
+  -webkit-border-radius: 5px 5px 0px 0px !important;
+}
+.tabla-items tr td{    
+    vertical-align:middle;
+}
+.description-item{
+    font-size: 0.72rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+.operacion-item{
+    font-size: 0.60rem;
+}
+.table-hover .cambio tr:hover {
+    /* background-color:rgb(27 27 28 / 15%); */
+}
+.table-list-items{
+    width: 100%;
+}
+.head-table{
+    background-color: var(--color-primary);
+    color: white;
+}
+.cambio > tr{
+    /* background: #b30b0b; */
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);     */
+    border-radius: 3px;    
+    /* border: 0.2px solid var(--color-primary); */
+    /* padding:15px; */
+    
+}
+.sub_title_comprobante{
+    font-size:0.78rem;
+    color:white;
+}
+.btn-nuevo{
+    all: unset;
+    color:#06D79C;
+}
+.actions-generar{
+    font-size:0.7rem;
+    color:white;
+
+}
+.actions-generar > p{
+    margin: 0 0.8rem;
+}
+.total-pedido{
+    display:flex;
+    justify-content:space-between;
+}
+.total-pedido>h6{
+    color:white;
+
+}
+
+
+.cantidad{
+    width: 6rem;
+    margin: 0 auto;
+    font-size: 11px;
+}
+.remove-item{
+    all: unset;
+    font-size:0.95rem;       
+    color: #F53137;   
+    padding:0.5rem; 
+    cursor: pointer !important;
+}
+.remove-item:hover{
+    cursor: pointer !important;
+    all: unset;
+    font-size:0.95rem;       
+    color: white;    
+    background-color: #F53137;
+    padding:0.5rem; 
+    border-radius: 3px;
+}
+.btn-cancel{
+    background-color: #DC3545;
+    color: white;
+}
+.btn-cancel:hover{
+    background-color: #bd2e3c;
+    color: white;
+}
+.btn-generic {
+    background-color:#06D79C;
+    color: white;
+}
+.btn-generic:hover {
+    background-color:#0fb988;
+    color: white;
+}
+
 @media (max-width: 1379px) {
     .money-cambio > div > p{
         font-size: 0.85rem;
     }
     .title-generar{
-        font-size: 1rem; 
-       
+        font-size: 1rem;         
+    }
+    .input-group-sm>.input-group-append>.btn{
+        font-size:0.7rem;
+    }
+}
+@media (max-width: 1199px) {
+    .pedidos-tabla{
+        height:20vh;
+    }
+    .box-content-2{
+        padding-bottom:2rem;
+    }
+    .box-generar{
+        margin-top: 1.4rem;        
+    }
+  }
+@media (max-width: 991px) {
+    .box-generar{
+        margin-top: 0.5rem;
+        height:60vh;
+    }
+    .title-generar{
+        font-size:0.88rem;
+    }
+    .money-cambio > div > p{
+        font-size:0.7rem;
+    }
+    .form-box{
+        font-size: 0.7rem;
+    }
+  }
+@media (max-width: 540px) {
+    .box-header-1{
+        flex-direction: column !important;
+        /* justify-content:space-between; */
     }
   }
